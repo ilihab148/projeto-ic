@@ -1,0 +1,44 @@
+h1{
+    background-color: rgb(132, 209, 132);
+    text-align: center;
+}
+
+td,th{
+    text-align: center;
+}
+
+
+body {
+    background: linear-gradient(#52a4ec,white) no-repeat;
+    
+    }
+    #mainDiv {
+        margin-top:25%;
+        border:1px black solid;
+    }
+    #minus , #plus{
+        height:25px;
+        width:25px;
+     border:1px black solid;
+        border-radius:50%;
+    }
+    #minus:hover{
+        background-color:red;    
+        border:none;
+    }
+    #plus:hover{
+        background-color:green;
+        border:none;
+    }
+    #numberPlace {
+        margin-left:5px;
+        margin-right:5px;
+    }
+    #submit {
+        border:none;
+        height:25px;
+    }
+    #bottom{
+     margin-top:90%;
+    }
+    
