@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Pontos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="../js/comportamentoMenu.js"></script>
+</head>
+<body>
+    <style>
+        #type{
+          color:rgb(255, 255, 255);
+          font-weight: bold;
+        }
+        #apresentacao{
+         background-color: rgb(241, 152, 35);
+        }
+        .food{
+          width: 80%;
+          height:200px;
+          object-fit: cover;
+
+        }
+        .completeMeal{
+            width: auto;
+            height: 300px;
+        }
+        h5{
+          background-color: rgb(0, 0, 0);
+          color: white;
+          object-fit: cover;
+          text-align: center;
+        }
+        .h5{
+            background-color: black;
+            color: white;
+            text-align: center;
+            width: 55%;
+            margin: auto;
+        }
+        #elementos{
+          background-color: #ffffff;
+          overflow: scroll;
+          height: 450px;
+        }
+       
+    </style>
+    <div class="container" id="apresentacao">
+        <header id="type">
+            <h1>Redimir Pontos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Os Seus Pontos: 0</h1>
+        </header>
+    </div>
+    <div class="container text-center" id="elementos">
+      <div class="row align-items-end">
+        <div class="col">
+          <img src="../imagens/Agua33cl.jpg" class="food">
+          <h5>Água 33cl</h5>
+          <h6>30 Pontos</h6>
+          <button type="button" class="btn btn-success" onclick="informacao1()"> Redimir </button>
+          <br>
+          <button type="button" class="btn btn-secondary btn-sm" onclick="location.href='SumoLaranjaIA2.html'">informações adicionais</button>
+          <p id="pedidoEfetuado1"></p>
+        </div>
+        <div class="col">
+         <img src="../imagens/cocaCola.jpeg" class="food">
+         <h5>Coca-Cola</h5> 
+         <h6>35 Pontos</h6>
+         <button type="button" class="btn btn-success" onclick="informacao2()"> Redimir </button>
+         <br>
+         <button type="button" class="btn btn-secondary btn-sm" onclick="location.href='cocaColaIA2.html'">informações adicionais</button>
+         <p id="pedidoEfetuado2"></p>
+        </div>
+        <div class="col">
+        <img src="../imagens/laranja.jpg" class="food">
+         <h5>Sumo de laranja do Algarve </h5>
+         <h6>40 Pontos</h6>
+         <button type="button" class="btn btn-success" onclick="informacao3()"> Redimir </button>
+         <br>
+         <button type="button" class="btn btn-secondary btn-sm" onclick="location.href='SumoLaranjaIA2.html'">informações adicionais</button>
+         <p id="pedidoEfetuado3"></p>
+        </div>
+      </div>
+      <div class="row align-items-end">
+        <div class="col">
+            <img src="../imagens/boladeberlim.jpg" class="food">
+          <h5>Bola de Berlim</h5>
+          <h6>45 Pontos</h6>
+          <button type="button" class="btn btn-success" onclick="informacao4()"> Redimir </button>
+          <br>
+          <button type="button" class="btn btn-secondary btn-sm" onclick="location.href='tarteMacaIA2.html'">informações adicionais</button>
+          <p id="pedidoEfetuado4"></p>
+        </div>
+        <div class="col">
+            <img src="../imagens/nata.jpg" class="food">
+            <h5>Pastel de Nata</h5> 
+            <h6>45 Pontos</h6>
+            <button type="button" class="btn btn-success" onclick="informacao5()"> Redimir </button>
+            <br>
+            <button type="button" class="btn btn-secondary btn-sm" onclick="location.href='tarteMacaIA2.html'">informações adicionais</button>
+            <p id="pedidoEfetuado5"></p>
+        </div>
+        <div class="col">
+            <img src="../imagens/tarteMaca.jpeg" class="food">
+            <h5>Tarte de Maçã</h5>
+            <h6>50 Pontos</h6>
+            <button type="button" class="btn btn-success" onclick="informacao6()"> Redimir </button>
+            <br>
+            <button type="button" class="btn btn-secondary btn-sm" onclick="location.href='tarteMacaIA2.html'">informações adicionais</button>
+            <p id="pedidoEfetuado6"></p>
+        </div>
+      </div>
+    </div>
+    <!--botao para finalizar pedidos-->
+    <button type="button" class="btn btn-outline-success" 
+    onclick = "location.href='resumo_pedidos.html'">
+    Finalizar</button>
+    <br>
+    <br>
+    <button type="button" class="btn btn-dark" onclick = "location.href = 'pagina_principal.html'"> ← </button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>  

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Informações Adicionais</title>
+        <link rel="stylesheet" type="text/css" href="../estilos/style.css">
+        <script src="../js/comportamentoIA.js"></script>
+        <script src = "../js/lista_pedidos_anteriores.js"></script>
+    </head>
+    <body>
+
+        <h1>Informações Adicionais</h1>
+
+        <section class="baixo">
+          <h3>Origem</h3>
+          <p>A carne é fornecida por ... </p>
+
+          <hr>
+
+          <h3>Informação Nutricional</h3>
+          <table>
+              <tr>
+                  <td>Energia</td>
+                  <td>1585kj - 379kcal</td>
+              </tr>
+              <tr>
+                  <td>Lípidos</td>
+                  <td>15,39g</td>
+              </tr>
+              <tr>
+                  <td>Proteínas</td>
+                  <td>78,5g</td>
+              </tr>
+          </table>
+
+          <hr>
+
+          <h3>Alérgenos</h3>
+          <p>Depende dos acompanhamentos escolhidos.</p>
+          <img src="../imagens/ovos.png" height="50" width="50" alt="Alérgeno" title="Alérgeno ovos">
+        </section>
+
+        <h1>Acompanhamentos</h1>
+
+        <section class="baixo">
+            <form id="frmAcompanhamentoBife">
+                <input type="checkbox" class="checks" name="acompanhamentoBifeFrango" value="ovo"> Ovo Estrelado
+                <input type="checkbox" class="checks" name="acompanhamentoBifeFrango" value="arroz"> Arroz
+                <input type="checkbox" class="checks" name="acompanhamentoBifeFrango" value="batatas"> Batatas Fritas
+                <input type="checkbox" class="checks" name="acompanhamentoBifeFrango" value="salada"> Salada
+            </form>
+
+            <br>
+            <button id="btnSelecionarTudo" onclick="selecionarTudo()">Selecionar todas as opções</button>
+            <button id="btnDesselecionarTudo" onclick="desselecionarTudo()" disabled>Desselecionar todas as opções</button>
+            <button id="btnAplicarAcompanhamento" onclick="aplicarAcompanhamentoBifeFrango()">Aplicar</button>
+        </section>
+    <button type="button" class="btn btn-dark" class="botao_tras" onclick = "location.href = 'carne.html'"> ← </button>
+    </body>
+
+</html>
